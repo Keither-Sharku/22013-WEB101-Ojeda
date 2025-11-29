@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Picture</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-image: url(Wallpapers.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-box{
+            background: black;
+            text-align: center;
+            padding: 40px 90px;
+            color: #fff;
+            position: relative;
+            border-radius: 40px;
+            transition: 0.5s ease;
+        }
+
+        .profile-box:hover{
+            transform: scale(1.02);
+            box-shadow: 0 0 25px rgba(255,255,255,0.2);
+        }
+
+        .menu-icon, .Settings-icon{
+            width: 25px;
+            position: absolute;
+            top: 40px;
+            transition: 0.3s ease;
+        }
+        .menu-icon { left: 40px; }
+        .Settings-icon { right: 40px; }
+
+        .menu-icon:hover,
+        .Settings-icon:hover {
+            transform: scale(1.2);
+        }
+
+        .Profile-pic{
+            width: 150px;
+            border-radius: 50%;
+            background: #fff;
+            padding: 6px;
+            margin-top: 40px;
+            transition: 0.4s ease;
+        }
+        .Profile-pic:hover{
+            transform: scale(1.08);
+            box-shadow: 0 0 20px rgba(255,255,255,0.5);
+        }
+
+        .profile-bottom{
+            background: #fff;
+            color: #999;
+            padding: 60px 0;
+            margin-right: -90px;
+            margin-left: -90px;
+            margin-bottom: -40px;
+            border-radius: 20px;
+            margin-top: -10px;
+            transition: 0.3s ease;
+        }
+
+        .profile-bottom img{
+            width: 15px;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .profile-bottom img:hover{
+            transform: translateY(-5px);
+        }
+
+        .profile-box button{
+            background: #fff;
+            color: #ff574a;
+            border: none;
+            outline: none;
+            box-shadow: 0 5px 10px rgba(244, 67, 54, 0.5);
+            padding: 15px 60px;
+            cursor: pointer;
+            border-radius: 30px;
+            margin-bottom: -50px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: 0.3s ease;
+        }
+        .profile-box button:hover{
+            background: #ff574a;
+            color: white;
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 87, 74, 0.8);
+        }
+
+        .profile-box h3{
+            font-size: 22px;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+        .social-media img{
+            width: 20px;
+            margin: 30px 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .social-media img:hover{
+            transform: scale(1.3);
+            filter: drop-shadow(0 0 5px white);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="profile-box">
+
+            <img src="Menu.webp" class="menu-icon">
+            <img src="Settings.jpg" class="Settings-icon">
+            <img src="Profiles.jpg" class="Profile-pic">
+
+            <h3>John Keith B. Ojeda</h3>
+            <p>Keither</p>
+            <p>BSIT-22013</p>
+
+            <div class="social-media">
+                <a href="https://www.instagram.com/cutie_potatonsushi/" target="_blank">
+                    <img src="Instagram.png">
+                </a>
+
+                <a href="https://www.facebook.com/john.ojeda.466416" target="_blank">
+                    <img src="Facebook.webp">
+                </a>
+
+                <a href="https://github.com/Keither-Sharku" target="_blank">
+                    <img src="Git.jpg">
+                </a>
+            </div>
+
+            <button type="button">Follow</button>
+
+            <div class="profile-bottom">
+                <p>Learn More About My Profile</p>
+                <p>I am dedicated to continuous learning about encoding</p>
+                <img src="Arrow.jpg">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
